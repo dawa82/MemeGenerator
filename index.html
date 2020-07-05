@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+
+    <div class="container">
+        <form id="memeForm">
+            <div class="row">
+                <div class="col-15">
+                    <label for="imgUrl">Image URL</label>
+                </div>
+                <div class="col-80">
+                    <input type="url" name="imgUrl">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="textOnTop">Text on Top</label>
+                </div>
+                <div class="col-80">
+                    <input type="text" name="textOnTop">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="textOnBottom">Text on Bottom</label>
+                </div>
+                <div class="col-80">
+                    <input type="text" name="textOnBottom">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="">Text color</label>
+                </div>
+                <div class="col-80">
+                    <input type="color" name="color">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="">Text size</label>
+                </div>
+                <div class="col-80">
+                    <input type="range" name="fontsize" min="10" max="130">
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+        
+    <section class="meme-container" id="newMemeContainer"></section>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
